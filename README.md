@@ -2,7 +2,7 @@
 
 Game Flappy Bird Clone made in Java without additional libraries
 
-# How to test this game on Mac OS or Windows
+## How to test this game on Mac OS or Windows
 
 1. Download FlappyBird.jar file 
 
@@ -13,13 +13,13 @@ to download it, or find other ways to download java jdk for your operating syste
 
 4. And the game should be ready to play 
 
-# How to play
+## How to play
 
 1. Click the application to start the game
 
 2. Using space bar to jump and hava fun
 
-# ScreenShot
+## ScreenShot
 
 
 
