@@ -26,10 +26,12 @@ to download it, or find other ways to download java jdk for your operating syste
 
 1. Click the application to start the game
 
-2. Using space bar to jump and hava fun
+2. Using space bar to jump, p to pause the game, esc to quit the game
+
+3. I wish you enjoys my game and have a wonderful rest of your day
 
 ## ScreenShot
-
+<img width="501" alt="Screen Shot 2019-07-14 at 18 21 14" src="https://user-images.githubusercontent.com/49256436/61182369-86cc7f00-a664-11e9-982b-d907d1312090.png">
 
 
 # For More Games and coding Project please follow dominicjiang on github 
