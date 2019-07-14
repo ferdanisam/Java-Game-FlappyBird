@@ -2,6 +2,11 @@
 
 Game Flappy Bird Clone made in Java without additional libraries
 
+Contributor List:
+ 1. Dong Nguyen for the game idea
+ 
+ 2. sourabhv for the game assets picture (free download on github)
+
 ## How to test this game on Mac OS or Windows
 
 1. Download FlappyBird.jar file 
@@ -11,7 +16,11 @@ to download it, or find other ways to download java jdk for your operating syste
 
 3. Open terminal and type java (space) -jar (space) and drag the executable jar file in and press enter 
 
+<img width="1139" alt="Screen Shot 2019-07-14 at 18 13 59" src="https://user-images.githubusercontent.com/49256436/61182253-51736180-a663-11e9-99af-a3ea4e592988.png">
+
 4. And the game should be ready to play 
+
+<img width="499" alt="Screen Shot 2019-07-14 at 14 47 56" src="https://user-images.githubusercontent.com/49256436/61180425-a655ae80-a648-11e9-8791-a008f143eaae.png">
 
 ## How to play
 
@@ -21,6 +30,6 @@ to download it, or find other ways to download java jdk for your operating syste
 
 ## ScreenShot
 
-<img width="499" alt="Screen Shot 2019-07-14 at 14 47 56" src="https://user-images.githubusercontent.com/49256436/61180425-a655ae80-a648-11e9-8791-a008f143eaae.png">
+
 
 # For More Games and coding Project please follow dominicjiang on github 
