@@ -21,6 +21,6 @@ to download it, or find other ways to download java jdk for your operating syste
 
 ## ScreenShot
 
-
+<img width="499" alt="Screen Shot 2019-07-14 at 14 47 56" src="https://user-images.githubusercontent.com/49256436/61180425-a655ae80-a648-11e9-8791-a008f143eaae.png">
 
 # For More Games and coding Project please follow dominicjiang on github 
