@@ -1,6 +1,6 @@
 # Java-Game-FlappyBird
 
-Game Flappy Bird Clone using Java without additional libraries
+Game Flappy Bird Clone made in Java without additional libraries
 
 # How to test this game on Mac OS or Windows
 
@@ -21,3 +21,6 @@ to download it, or find other ways to download java jdk for your operating syste
 
 # ScreenShot
 
+
+
+# For More Games and coding Project please follow dominicjiang on github 
