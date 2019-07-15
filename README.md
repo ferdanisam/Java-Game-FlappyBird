@@ -6,6 +6,8 @@ Contributor List:
  1. Dong Nguyen for the game idea
  
  2. sourabhv for the game assets picture (free download on github)
+ 
+ 3. Dominic Jiang for the production of the game and game development
 
 ## How to test this game on Mac OS or Windows
 
