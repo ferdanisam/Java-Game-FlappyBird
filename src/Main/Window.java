@@ -58,4 +58,3 @@ public class Window {
 		return canvas;
 	}
 }
- 
