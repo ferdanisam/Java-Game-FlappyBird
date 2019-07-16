@@ -2,6 +2,7 @@ package State;
 
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import java.util.ArrayList;
 
 import Asset.Background;
 import Entity.Base;
@@ -23,13 +24,19 @@ public class GameState extends State {
 	
 	private Base base;
 	
-	private PipeUp pipeUp;
+	private ArrayList<PipeUp> pipeUps=new ArrayList<PipeUp>();
 	
-	private PipeDown pipeDown;
+	private ArrayList<PipeDown> pipeDowns=new ArrayList<PipeDown>();
 	
 	private Bird bird;
 	
 	private ScoreBoard scoreBoard;
+	
+	private int pipeDelta=0;
+	
+	private int level=30;
+	
+	private int levelDelta=0;
 	
 	private int score=0;
 	
@@ -44,11 +51,11 @@ public class GameState extends State {
 		
 		base=new Base(display,-display.getWidth(),display.getHeight()-100,display.getWidth()*2,100);
 		
-		pipeUp=new PipeUp(display,display.getWidth(),0,0,0);
-
-		pipeDown=new PipeDown(display,display.getWidth(),0,0,0);
+		pipeUps.add(new PipeUp(display,display.getWidth(),0,0,0));
 		
-		bird=new Bird(display,200,200,40,40);
+		pipeDowns.add(new PipeDown(display,display.getWidth(),0,0,0));
+		
+		bird=new Bird(display,200,300,40,40);
 	}
 	
 	public void tick() {
@@ -56,24 +63,41 @@ public class GameState extends State {
 		
 		base.tick();
 		
-		pipeUp.tick();
+		int number=(int)(Math.random()*level);
 		
-		pipeDown.tick();
+		if(number==1 && pipeDelta>=50) {
+			pipeUps.add(new PipeUp(display,display.getWidth(),0,0,0));
+			
+			pipeDowns.add(new PipeDown(display,display.getWidth(),0,0,0));
+			
+			pipeDelta=0;
+		}
 		
+		
+		pipeDelta++;
+		
+		levelDelta++;
+		
+		if(levelDelta>=300 && level>10) {
+			level--;
+			levelDelta=0;
+		}
+		
+		
+		for(int i=0;i<pipeUps.size();i++) {
+			pipeUps.get(i).tick();
+		}
+		
+		for(int i=0;i<pipeDowns.size();i++) {
+			pipeDowns.get(i).tick();
+		}
+
 		bird.tick();
 		
 		if(delta/alpha==2) {
 			delta=0;
 		}else {
 			delta++;
-		}
-		
-		if(pipeUp.getX()<=0) {
-			pipeUp=new PipeUp(display,display.getWidth(),0,0,0);
-			
-			pipeDown=new PipeDown(display,display.getWidth(),0,0,0);
-			
-			score++;
 		}
 	}
 	
@@ -88,16 +112,32 @@ public class GameState extends State {
 		
 		base.render(g);
 		
-		pipeUp.render(g);
+		for(int i=0;i<pipeUps.size();i++) {
+			pipeUps.get(i).render(g);
+		}
 		
-		pipeDown.render(g);
+		for(int i=0;i<pipeDowns.size();i++) {
+			pipeDowns.get(i).render(g);
+		}
 		
 		bird.render(g);
 		
 	}
 	
+	public void setScore(int score) {
+		this.score=score;
+	}
+	
 	public int getScore() {
 		return score;
+	}
+	
+	public void removePipeUp(PipeUp pipeUp) {
+		pipeUps.remove(pipeUp);
+	}
+	
+	public void removePipeDown(PipeDown pipeDown) {
+		pipeDowns.remove(pipeDown);
 	}
 	
 	public Bird getBird() {
