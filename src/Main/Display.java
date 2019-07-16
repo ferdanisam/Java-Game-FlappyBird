@@ -45,7 +45,7 @@ public class Display implements Runnable {
 	private void initializeHandler() {
 		window.getCanvas().requestFocus();
 		
-		keyActionHandler=new KeyActionHandler();
+		keyActionHandler=new KeyActionHandler(this);
 		window.getCanvas().addKeyListener(keyActionHandler);
 		
 		mouseActionHandler=new MouseActionHandler();
@@ -98,7 +98,9 @@ public class Display implements Runnable {
 		if(State.getState()==startState && startState!=null) {
 			startState.tick();
 		}else if(State.getState()==gameState && gameState!=null) {
-			gameState.tick();
+			if(keyActionHandler.getPause()%2==0) {
+				gameState.tick();
+			}
 		}else if(State.getState()==endState && endState!=null) {
 			endState.tick();
 		}
