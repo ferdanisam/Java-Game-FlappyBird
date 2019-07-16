@@ -1,6 +1,6 @@
 # Java-Game-FlappyBird
 
-Game Flappy Bird Clone made in Java without additional libraries
+Game Flappy Bird made in Java without additional libraries by Dominic Jiang
 
 Contributor List:
  1. Dong Nguyen for the game idea
@@ -13,8 +13,7 @@ Contributor List:
 
 1. Download FlappyBird.jar file 
 
-2. Make sure you have JVM downloaded if not go to https://www.oracle.com/technetwork/java/javase/downloads/index.html
-to download it, or find other ways to download java jdk for your operating system
+2. Make sure you have JVM downloaded if not find ways to download for your operating system
 
 3. Open terminal and type java (space) -jar (space) and drag the executable jar file in and press enter 
 
