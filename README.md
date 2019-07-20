@@ -1,7 +1,7 @@
 # Java-Game-FlappyBird
 Game Flappy Bird Made In Java Without Additional Libraries By Dominic Jiang
 
-Contributor List:
+## Contributor List:
 
  1. Dong Nguyen for the game idea
  
