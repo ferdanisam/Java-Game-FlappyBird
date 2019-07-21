@@ -23,7 +23,7 @@ Game FlappyBird made in Java without addtional libraries by Dominic Jiang
 
 <img width="499" alt="Screen Shot 2019-07-14 at 14 47 56" src="https://user-images.githubusercontent.com/49256436/61180425-a655ae80-a648-11e9-8791-a008f143eaae.png">
 
-## How To Play
+## Command Center
 
 1. Click the application to start the game
 
