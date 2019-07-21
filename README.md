@@ -1,4 +1,5 @@
 # Java-Game-FlappyBird
+
 Game FlappyBird made in Java without addtional libraries by Dominic Jiang
 
 ## Contributor List:
@@ -19,7 +20,7 @@ Game FlappyBird made in Java without addtional libraries by Dominic Jiang
 
 <img width="1139" alt="Screen Shot 2019-07-14 at 18 13 59" src="https://user-images.githubusercontent.com/49256436/61182253-51736180-a663-11e9-99af-a3ea4e592988.png">
 
-4. And the game should be ready to play 
+4. And the game should be ready to go 
 
 <img width="499" alt="Screen Shot 2019-07-14 at 14 47 56" src="https://user-images.githubusercontent.com/49256436/61180425-a655ae80-a648-11e9-8791-a008f143eaae.png">
 
