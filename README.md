@@ -1,17 +1,17 @@
 # Java-Game-FlappyBird
-Game Flappy Bird Made In Java Without Additional Libraries By Dominic Jiang
+Game FlappyBird made in Java without addtional libraries by Dominic Jiang
 
 ## Contributor List:
 
  1. Dong Nguyen for the game idea
  
- 2. sourabhv for the game assets picture (free download on github)
+ 2. Sourabhv for the game assets picture (free download on github)
  
  3. Dominic Jiang for the production of the game and game development
 
-## How to test this game on Mac OS or Windows
+## How To Test This Game On Mac OS Or Windows
 
-1. Download FlappyBird.jar file 
+1. Download FlappyBird.jar 
 
 2. Make sure you have JVM downloaded if not find ways to download for your operating system
 
@@ -23,7 +23,7 @@ Game Flappy Bird Made In Java Without Additional Libraries By Dominic Jiang
 
 <img width="499" alt="Screen Shot 2019-07-14 at 14 47 56" src="https://user-images.githubusercontent.com/49256436/61180425-a655ae80-a648-11e9-8791-a008f143eaae.png">
 
-## How to play
+## How To Play
 
 1. Click the application to start the game
 
@@ -32,10 +32,10 @@ Game Flappy Bird Made In Java Without Additional Libraries By Dominic Jiang
 3. I wish you enjoys my game and have a wonderful rest of your day
 
 ## ScreenShot
+
 <img width="501" alt="Screen Shot 2019-07-14 at 18 21 14" src="https://user-images.githubusercontent.com/49256436/61182369-86cc7f00-a664-11e9-982b-d907d1312090.png">
 
 <img width="499" alt="Screen Shot 2019-07-14 at 18 21 51" src="https://user-images.githubusercontent.com/49256436/61182398-e6c32580-a664-11e9-86d1-939d3c161f82.png">
 
-
 # For More Games And Coding Project 
-# Please Follow dominicjiang On Github 
+# Please Follow dominicjiang On Github
