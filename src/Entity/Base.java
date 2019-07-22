@@ -22,7 +22,7 @@ public class Base extends Entity {
 			x+=6;
 		}
 		
-		if(display.getGameState().getBird().y+display.getGameState().getBird().height>=this.y) {
+		if(display.getRunState().getBird().y+display.getRunState().getBird().height>=this.y) {
 			State.setState(display.getStartState());
 			display.restart();
 		}
