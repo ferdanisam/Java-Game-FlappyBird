@@ -12,7 +12,7 @@ import Entity.PipeUp;
 import Entity.ScoreBoard;
 import Main.Display;
 
-public class GameState extends State {
+public class RunState extends State {
 	
 	private int alpha=600;
 	
@@ -40,7 +40,7 @@ public class GameState extends State {
 	
 	private int score=0;
 	
-	public GameState(Display display) {
+	public RunState(Display display) {
 		super(display);
 		
 		initialize();
