@@ -23,11 +23,11 @@ public class PipeDown extends Entity {
 	public void tick() {
 		x-=6;
 		
-		int birdX=display.getGameState().getBird().x;
+		int birdX=display.getRunState().getBird().x;
 		
-		int birdY=display.getGameState().getBird().y;
+		int birdY=display.getRunState().getBird().y;
 		
-		int birdSize=display.getGameState().getBird().width;
+		int birdSize=display.getRunState().getBird().width;
 		
 		if(birdX+birdSize>x && birdX<x+pipeDown.getWidth()) {
 			if(birdY+birdSize>y+display.getHeight()-100-pipeHeight) {
@@ -37,7 +37,7 @@ public class PipeDown extends Entity {
 		}
 		
 		if(x+pipeDown.getWidth()<0) {
-			display.getGameState().removePipeDown(this);
+			display.getRunState().removePipeDown(this);
 		}
 	}
 	
