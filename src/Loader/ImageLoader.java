@@ -13,7 +13,7 @@ public class ImageLoader {
 		try {
 			return ImageIO.read(getClass().getClassLoader().getResource(path));
 		}catch(Exception exception) {
-			System.out.println("Cannot load image");
+			System.out.println("Cannot find or load image");
 		}
 		
 		return null;
