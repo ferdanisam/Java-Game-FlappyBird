@@ -1,10 +1,10 @@
 package State;
 
 import java.awt.Graphics2D;
-
 import Main.Display;
 
 public abstract class State {
+	
 	public static State currentState=null;
 	
 	public static void setState(State state) {
