@@ -38,5 +38,5 @@ Game FlappyBird made in Java without addtional libraries by Dominic Jiang
 
 <img width="499" alt="Screen Shot 2019-07-14 at 18 21 51" src="https://user-images.githubusercontent.com/49256436/61182398-e6c32580-a664-11e9-86d1-939d3c161f82.png">
 
-# For More Games And Coding Project 
+# For More Games And Coding Projects 
 # Please Follow dominicjiang On Github
