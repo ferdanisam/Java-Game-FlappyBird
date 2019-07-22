@@ -1,46 +1,60 @@
 package Main;
 
-import Asset.Background;
-import Asset.Bird;
-import Loader.ImageLoader;
-import Asset.Number;
-import Asset.Obstacle;
+import java.awt.Canvas;
+import java.awt.Dimension;
 
-public class Launch {
+import javax.swing.JFrame;
+
+public class Window {
+	private String title;
 	
-	private final String title="Flappy Bird";
+	private int width;
 	
-	private final int width=500;
+	private int height;
 	
-	private final int height=800;
+	private JFrame frame;
 	
-	public Window window;
+	private Canvas canvas;
 	
-	private Display display;
-	
-	private ImageLoader imageLoader;
-	
-	public static void main(String[]args) {
-		new Launch();
+	public Window(String title,int width,int height) {
+		this.title=title;
+		this.width=width;
+		this.height=height;
+		
+		createWindow();
 	}
 	
-	public Launch() {
-		loadingData();
+	private void createWindow() {
+		frame=new JFrame();
+		frame.setTitle(title);
+		frame.setSize(width,height);
+		frame.setVisible(true);
+		frame.setResizable(false);
+		frame.setLocationRelativeTo(null);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		window=new Window(title,width,height);
-		display=new Display(window);
-		display.start();
+		canvas=new Canvas();
+		canvas.setPreferredSize(new Dimension(width,height));
+		canvas.setMaximumSize(new Dimension(width,height));
+		canvas.setMinimumSize(new Dimension(width,height));
+		
+		frame.add(canvas);
+		frame.pack();
 	}
 	
-	private void loadingData() {
-		imageLoader=new ImageLoader();
-		
-		Background.initialize(imageLoader);
-		
-		Bird.initialize(imageLoader);
-		
-		Number.initialize(imageLoader);
-		
-		Obstacle.initialize(imageLoader);
+	public int getWidth() {
+		return width;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+	
+	public JFrame getFrame() {
+		return frame;
+	}
+	
+	public Canvas getCanvas() {
+		return canvas;
 	}
 }
