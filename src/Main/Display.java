@@ -7,7 +7,7 @@ import java.awt.image.BufferStrategy;
 import Handler.KeyActionHandler;
 import Handler.MouseActionHandler;
 import State.EndState;
-import State.GameState;
+import State.RunState;
 import State.StartState;
 import State.State;
 
@@ -30,7 +30,7 @@ public class Display implements Runnable {
 	
 	private StartState startState;
 	
-	private GameState gameState;
+	private RunState runState;
 	
 	private EndState endState;
 	
@@ -55,7 +55,7 @@ public class Display implements Runnable {
 	private void initializeState() {
 		startState=new StartState(this);
 		
-		gameState=new GameState(this);
+		runState=new RunState(this);
 		
 		endState=new EndState(this);
 		
@@ -95,13 +95,13 @@ public class Display implements Runnable {
 	}
 	
 	private void tick() {
-		if(State.getState()==startState && startState!=null) {
+		if(State.getState()==startState) {
 			startState.tick();
-		}else if(State.getState()==gameState && gameState!=null) {
+		}else if(State.getState()==runState) {
 			if(keyActionHandler.getPause()%2==0) {
-				gameState.tick();
+				runState.tick();
 			}
-		}else if(State.getState()==endState && endState!=null) {
+		}else if(State.getState()==endState) {
 			endState.tick();
 		}
 		
@@ -121,11 +121,11 @@ public class Display implements Runnable {
 		
 		g.clearRect(0,0,window.getWidth(),window.getHeight());
 		
-		if(State.getState()==startState && startState!=null) {
+		if(State.getState()==startState) {
 			startState.render((Graphics2D)g);
-		}else if(State.getState()==gameState && gameState!=null) {
-			gameState.render((Graphics2D)g);
-		}else if(State.getState()==endState && endState!=null) {
+		}else if(State.getState()==runState) {
+			runState.render((Graphics2D)g);
+		}else if(State.getState()==endState) {
 			endState.render((Graphics2D)g);
 		}
 		
@@ -153,8 +153,8 @@ public class Display implements Runnable {
 		return startState;
 	}
 	
-	public GameState getGameState() {
-		return gameState;
+	public RunState getRunState() {
+		return runState;
 	}
 	
 	public EndState getEndState() {
@@ -162,6 +162,6 @@ public class Display implements Runnable {
 	}
 	
 	public void restart() {
-		gameState=new GameState(this);
+		runState=new RunState(this);
 	}
 }
