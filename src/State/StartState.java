@@ -8,7 +8,6 @@ import Main.Display;
 
 public class StartState extends State {
 	
-	
 	public StartState(Display display) {
 		super(display);
 	}
@@ -16,7 +15,7 @@ public class StartState extends State {
 	
 	public void tick() {
 		if(display.getMouseActionHandler().getPressed()) {
-			State.setState(display.getGameState());
+			State.setState(display.getRunState());
 		}
 	}
 	
