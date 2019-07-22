@@ -30,7 +30,7 @@ Game FlappyBird made in Java without addtional libraries by Dominic Jiang
 
 2. Using space bar to jump, p to pause the game, esc to quit the game
 
-3. I wish you enjoys my game and have a wonderful rest of your day
+3. I wish you enjoy my game and have a wonderful rest of your day
 
 ## ScreenShot
 
