@@ -16,7 +16,7 @@ public class EndState extends State {
 	
 	public void tick() {
 		if(display.getMouseActionHandler().getPressed()) {
-			State.setState(display.getGameState());
+			State.setState(display.getRunState());
 		}
 	}
 	
