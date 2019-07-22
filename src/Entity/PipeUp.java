@@ -24,11 +24,11 @@ public class PipeUp extends Entity {
 	public void tick() {
 		x-=6;
 		
-		int birdX=display.getGameState().getBird().x;
+		int birdX=display.getRunState().getBird().x;
 		
-		int birdY=display.getGameState().getBird().y;
+		int birdY=display.getRunState().getBird().y;
 		
-		int birdSize=display.getGameState().getBird().width;
+		int birdSize=display.getRunState().getBird().width;
 		
 		if(birdX+birdSize>x && birdX<x+pipeUp.getWidth()) {
 			if(birdY<y+pipeHeight) {
@@ -39,13 +39,13 @@ public class PipeUp extends Entity {
 		
 		if(birdX>x+pipeUp.getWidth()) {
 			if(over) {
-				display.getGameState().setScore(display.getGameState().getScore()+1);
+				display.getRunState().setScore(display.getRunState().getScore()+1);
 				over=false;
 			}
 		}
 		
 		if(x+pipeUp.getWidth()<0) {
-			display.getGameState().removePipeUp(this);
+			display.getRunState().removePipeUp(this);
 		}
 	}
 	
