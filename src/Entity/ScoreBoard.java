@@ -20,7 +20,7 @@ public class ScoreBoard extends Entity {
 	}
 	
 	public void tick() {
-		int score=display.getGameState().getScore();
+		int score=display.getRunState().getScore();
 		
 		first=score%10;
 		
@@ -46,3 +46,4 @@ public class ScoreBoard extends Entity {
 			
 		}
 	}
+
